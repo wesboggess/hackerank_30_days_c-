@@ -1,0 +1,23 @@
+using System;
+
+namespace HackerankDay2
+{
+    class Program
+    {
+
+
+        static void Main(string[] args)
+        {
+
+            var mealCost = double.Parse(Console.ReadLine());
+            var tipPercent = int.Parse(Console.ReadLine());
+            var taxPercent = int.Parse(Console.ReadLine());
+
+
+            Console.WriteLine("The total meal cost is " + (Math.Round((mealCost + (mealCost * tipPercent / 100)) + 
+                (mealCost * taxPercent / 100), MidpointRounding.ToEven)) + " dollars.");
+
+
+        }
+    }
+}

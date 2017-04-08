@@ -1,0 +1,32 @@
+using System;
+
+namespace HackerRankDay6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var N = int.Parse(Console.ReadLine());
+
+            for (var T = 0; T <= N; T++)
+            {
+                var S = Console.ReadLine();
+
+                for (var j = 0; j < S.Length; j++)
+                {
+                    if (j % 2 == 0) Console.Write(S[j]);
+                }
+                Console.Write(" ");
+
+
+
+                for (var j = 0; j < S.Length; j++)
+                {
+                    if (j % 2 != 0) Console.Write(S[j]);
+                }
+
+                Console.Write(Environment.NewLine);
+            }
+        }
+    }
+}
